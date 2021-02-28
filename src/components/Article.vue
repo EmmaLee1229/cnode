@@ -63,7 +63,7 @@
         },
         methods:{
             getArticleData(){
-                this.$http.get('http://mock.hunger-valley.com/cnode/api/v1/topic/${this.$route.params.id}')
+                this.$http.get(`http://cnodejs.org/api/v1/topic/${this.$route.params.id}`)
                     .then(res=>{
                         if(res.data.success == true){
                             this.isLoading = false

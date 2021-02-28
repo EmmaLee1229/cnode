@@ -54,7 +54,7 @@
         },
         methods:{
             getData(){
-                this.$http.get('http://mock.hunger-valley.com/cnode/api/v1/topics',{
+                this.$http.get('https://cnodejs.org/api/v1/topics/',{
                     params:{
                     limit:20,
                     page:this.postPage
